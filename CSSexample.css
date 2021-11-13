@@ -1,19 +1,43 @@
-body {
-background-color: lightblue;
 
+
+:root {
+    --light_red: #F8EPA1;
+    --red: #F76C6;
+    --light_blue: #A8d0e6;
+    --blue: #374785;
+    --dark_blue: #24305E;
 }
+
+body {
+    background-color: var(--light_blue);
+}
+
 h1 {
-color: white;
-text-align: center;
+    font-family: Arial;
+    color: purple;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
 }
+
 h2 {
-color: white;
-text-align: center;
+    font-family: Arial;
+    color: purple;
+    padding: 10px;
+    margin: 10px;
 }
-#p1 {
-font-family: verdana;
-font-size: 20px;
-    color: aliceblue;
+
+p1 {
+    font-family: verdana;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    color: darkslategrey;
+}
+
+p1::first-line {
+    color: #ff0000;
+    font-variant: small-caps;
 }
 
 #img {
@@ -22,11 +46,52 @@ font-size: 20px;
     color: aliceblue;
 }
 
-#a {
-font-family: verdana;
-font-size: 20px;
-    color: aliceblue;
+a {
+    font-family: verdana;
+    font-size: 20px;
+    color: purple;
 }
+
+a:visited {
+    color: darkorange;
+}
+
+label {
+    color: purple;
+    padding: 10px;
+    margin: 10px;
+    font-family: Arial;
+}
+
+input {
+    color: purple;
+    padding: 10px;
+    margin: 10px;
+}
+
+textarea {
+    color: antiquewhite;
+    padding: 10px;
+    margin: 10px;
+}
+
+.Buxa {
+    background: aliceblue;
+}
+
+input.Buxa {
+    text-align: center;
+    color: darkorange;
+}
+
+@media only screen and (max-width: 800px){
+    body{
+        background-color: darkseagreen;
+    }
+}
+
+
+
 
 
 
