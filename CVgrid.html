@@ -2,18 +2,81 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Learning how to grid</title>
+    <title>Title</title>
     <link rel="stylesheet" href="CVgrid.css">
+    <script src="First.js"></script>
+    <script>
+        function myFunction(){
+            document.getElementById("p1").innerHTML = "Hello to my world";
+        }
+    </script>
+    <script type = "text/javascript">
+         function msgprint() {
+            alert("Did you liked my CV page?");
+         }
+    </script>
+
 </head>
 <body>
-<div id="grid_container">
-     <div id="item1"> <b>Hello to my grid page </b>
-     </div>
-     <div id="item2">
-     <img id = "girl" src="images/girl.PNG" style="width: 80%;">
-     </div>
-     <div id="item3"></div>
+
+<div class = "Container">
+
+    <div class="item1">
+        <h2>Yuli Grossman<br></h2>
+        <p>
+            <h5>Second - year student for Management Information Systems | Ben Gurion University</h5>
+            I am a hardworking and curious management information systems student with<br>
+            experience in project management and coding. I have a great passion for technology and<br>
+            for analyzing problems with user requirements in mind. </p>
+    </div>
+    <div class="item4"><img id = "rotate_yuli" src="images/yuli.png" style="width: 80%;"><br></div>
+    <div class="item2">
+
+        <p id="p1">This is my CV</p>
+        <button type="button" onclick="myFunction()">Click here</button><br>
+        <h4><bold>Email</bold> </h4>
+        <p>yuligros11@gmail.com</p>
+        <h4><bold>Phone</bold> </h4>
+        <p>+972 525225280</p>
+        <form>
+         <input type = "button" onclick = "msgprint()" value = "Click here">
+        </form>
+<p>
+
+    </div>
+    <div class="item3">
+
+        <p>
+        <h2><srtong>EXPERIENCE</srtong></h2>
+            <h4>2021 –Present | Startup Investment Analyst Course, fresh.found VC </h4>
+            Ben Gurion University Venture Capital fund – The analysts' course of the university's <br>
+            venture capital found during a full semester for elite student of the university.
+            <h4>2021 - Present | Google Developer Student Club Member, BGU</h4>
+            Learning about new developing technologies in a peer-to-peer learning environment<br>
+            while building solutions for local businesses and their community.<br>
+            Relevant technologies – Flutter & React
+            <h4>Animated Video Editor</h4>
+            Student position under the Department of Management - Ben Gurion University<br>
+            <h4>Military Service</h4>
+            2015 – 2017 | Outstanding athlete status (basketball player)<br>
+            <h4>Coaching | Individual and group coach</h4>
+            > Pilates Mattress and Reformer Instructor<br>
+            > Basketball coach for young and professional players
+        </p>
+
+
+    </div>
+    <div class="item5">
+        <p>
+            <h2><srtong>ACHIEVEMENTS</srtong></h2>
+            <h4>2008 - 2017 - Israel National Basketball Team</h4>
+            > 2011 - 2013 Student at the Academy of Excellence in Sports, Wingate<br>
+            > 2009 - 2010 & 2015 - 2016 - Captain of the Israeli national basketball team
+            <h4>2018 - Represented the Israel National Basketball Women Team in the Maccabiah</h4>
+       </p>
     </div>
 
+
+</div>
 </body>
 </html>

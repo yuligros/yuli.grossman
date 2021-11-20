@@ -1,74 +1,128 @@
-
-:root {
+/*{
+    border: 2px solid black;
+}
+/*:root {
     --light_white: #EDC7B7;
     --white: #EEE2DC;
     --light_blue: #BAB2B5;
     --blue: #123C69;
     --dark_pink: #AC3B61;
-}
+}*/
 
 body{
-    background: var(--light_white);
+    background: snow;
+}
+input{
+    background-color: lightblue;
+}
+button{
+   background-color: lightblue;
+}
+p{
+    color: slateblue;
+}
+h2{
+    color: darkblue;
+}
+h4{
+    color: darkblue;
+}
+h5{
+    color: darkblue;
+}
+#p1{
+    color: darkblue;
 }
 
-div{
-
-}
-
-#grid_container {
+.Container {
   display: grid;
   grid-template-areas:
-  'header header header'
-  'left right right'
-  'left right right';
+  'right right header header'
+  'menu menu main main'
+  'menu menu footer footer';
 }
 
-#item1 {
+.item1 {
     grid-area: header;
-    height: 120px;
-    width: 95vw;
+    height: 20vh;
+    width: 60vw;
     padding: 20px;
     margin: 20px;
-
 }
-
-#item2 {
-    grid-area: left;
-    height: 400px;
-    width: 400px;
-    padding: 20px;
-    margin: 20px;
-   background-color: var(--dark_pink);
-}
-
-#item3 {
+.item4 {
     grid-area: right;
-    height: 400px;
-    width: 70vw;
+    height: 20vh;
+    width: 15vw;
     padding: 20px;
     margin: 20px;
-    background-color: var(--dark_pink);
 }
-
-b{
-    color: var(--dark_pink);
-    margin: 700px;
-    font-family: Arial;
-    font-size: 30px;
-}
-#girl{
-
+.item2 {
+    grid-area: menu;
+    height: 60vh;
+    width: 15vw;
     padding: 20px;
     margin: 20px;
-    border: var(--light_blue);
+}
+.item3 {
+    grid-area: main;
+    height: 60vh;
+    width: 60vw;
+    padding: 20px;
+    margin: 20px;
+
+}
+
+.item5 {
+    grid-area: footer;
+    height: 60vh;
+    padding: 20px;
+    margin: 20px;
+}
+@media only screen and (max-width: 600px){
+    .container {
+     display: grid;
+     grid-template-areas:
+     'header'
+     'header'
+     'header'
+     'header'
+     'header'
+     'menu'
+     'main'
+     'main'
+     'right'
+     'right'
+     'menu'
+     'footer'
+     'footer'
+     'footer'
+     'footer';
+}
 }
 
 @media only screen and (max-width: 1000px){
     body{
-        background-color: var(--blue);
+        background-color: lightblue;
     }
 }
 
+@keyframes blink { from {background-color: chartreuse;} to {background-color: turquoise;}}
+
+div {
+    animation-name: blink;
+    animation-duration: 4s;
+}
+
+@keyframes rotate{
+    from { transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+#rotate_yuli{
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
 
 
 
